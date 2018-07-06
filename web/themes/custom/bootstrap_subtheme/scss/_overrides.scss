@@ -1,0 +1,298 @@
+  // @todo these should be their own CSS files and only included when
+  // specific Drupal libraries are used.
+  @import "component/alert";
+  @import "component/ajax";
+  @import "component/field";
+  @import "component/file";
+  @import "component/filter";
+  @import "component/form";
+  @import "component/icon";
+  @import "component/navbar";
+  @import "component/node";
+  @import "component/panel";
+  @import "component/progress-bar";
+  @import "component/table-drag";
+  @import "component/tabs";
+  @import "component/toolbar"; // jQuery UI style overrides.
+  @import "jquery-ui/autocomplete";
+
+
+  ol,
+  ul {
+    padding-left: 1.5em;
+    .popover &:last-child {
+      margin-bottom: 0;
+    }
+  } // Page header.
+  .page-header {
+    margin-top: 0;
+  } // Footer.
+  .footer {
+    //margin-top: 45px;
+    //padding-top: 35px;
+    //padding-bottom: 36px;
+    border-bottom: 15px solid $brand-secondary;
+    background: $brand-primary;
+    height: 160px;
+  } // Paragraphs.
+  p:last-child,
+  .form-group:last-child,
+  .panel:last-child {
+    margin-bottom: 0;
+  } // Help region.
+  .region-help {
+    >.glyphicon {
+      font-size: $font-size-large;
+      float: left;
+      margin: -0.05em 0.5em 0 0;
+    }
+    .block {
+      overflow: hidden;
+    }
+  }
+
+
+  .help-block,
+  .control-group .help-inline {
+    color: $gray-light;
+    font-size: 12px;
+    margin: 5px 0 10px;
+    padding: 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+
+
+
+  .sliderblock {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 105px;
+    max-height: 400px;
+    img {
+      max-height: 345px;
+      width: auto;
+    }
+  }
+
+
+
+
+  .region-navigation {
+    
+
+    .block-system-menu-blocksocial-menu {
+      background: $brand-primary;
+      height: 40px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      .container {
+        padding: 0;
+      }
+    }
+    section#block-socialmediamenu-2 {
+      position: absolute;
+      color: white;
+      background-color: $brand-primary;
+      top: 0;
+      right: 0;
+
+      height: 40px;
+      width: 100%;
+      div {
+        float: right;
+        margin-right: 45px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+
+
+  .region-footer {
+
+
+    section#block-footertextbelowlogo-2 {
+      // p{
+      font-size: 70%;
+      margin-left: 50.5px;
+      color: $brand-secondary; //}
+    }
+
+
+    section#block-footertextbelowlogo {
+      float: right;
+      position: absolute;
+      color: $brand-secondary;
+      font-size: 70%;
+      right: 10px;
+      bottom: 0px
+    }
+
+
+    section#block-socialmediamenu {
+      position: absolute;
+      right: 35px;
+      top: -80px;
+      span {
+        font-size: 120%;
+        color: white;
+      }
+      h2 {
+        visibility: hidden;
+      }
+    }
+
+
+
+    position: relative;
+    .JSA-social-logo-footer-fb {}
+
+    .JSA-social-logo-footer-tblr {}
+
+
+    .JSA-social-logo-footer-twttr {}
+
+
+    .JSA-social-logo-footer-ingrm {}
+
+
+    .JSA-white-logo-footer {
+      img {
+        &:hover {
+          opacity: 0.75;
+        }
+
+        height: auto;
+        width: 160px;
+        margin-left: 50.5px;
+        margin-top: -15px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .block-system-menu-blocksocial-menu {
+
+    .top-strip-blue {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: 15px
+    }
+    width: 100%;
+
+
+    .container {
+      padding: 0;
+    }
+  } //is the social media menu 
+  .top-strip-blue {
+    float: right;
+    color: white;
+    span {
+      diplay: inline;
+    }
+
+    ul {
+      display: inline-block;
+      li {
+
+        display: inline-block;
+        a {
+          color: white;
+          &:hover {
+            background-color: $brand-primary;
+            color: $brand-secondary;
+          }
+        }
+      }
+    }
+  } //Top menu bars.
+  //#122941;//#777
+  //#4675A3;//#333
+  .main-container {
+    margin-top: 120px;
+  } //Main navigation(main menu)
+  .menu--main {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-right: -20px;
+
+    li {
+
+      &::after {
+        content: ":";
+        display: inline-block;
+        margin-left: -5px;
+      }
+      a {
+        color: $brand-primary;
+        display: inline-block;
+        &.is-active {
+          color: $brand-secondary;
+        }
+        &:hover {
+          color: $brand-secondary;
+        }
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+
+
+
+
+//carousel-indicators overides
+.carousel-indicators {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width:  20px;
+    height: 20px;
+    margin: 4px;
+    text-indent: -999px;
+    border: 1px solid $carousel-indicator-border-color;
+    border-radius: 10px;
+    cursor: pointer;
+
+    // IE8-9 hack for event handling
+    //
+    // Internet Explorer 8-9 does not support clicks on elements without a set
+    // `background-color`. We cannot use `filter` since that's not viewed as a
+    // background color by the browser. Thus, a hack is needed.
+    // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
+    //
+    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
+    // set alpha transparency for the best results possible.
+    background-color: #000 \9; // IE8
+    background-color: rgba(0,0,0,0); // IE9
+    &:hover {
+      background-color: $brand-secondary;
+    }
+  }
+  .active {
+    margin: 4px;
+    width:  21px;
+    height: 21px;
+    background-color: $carousel-indicator-active-bg;
+  }
+}
