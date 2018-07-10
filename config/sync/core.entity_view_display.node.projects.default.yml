@@ -1,0 +1,82 @@
+uuid: bc274513-6085-40eb-b97e-e67bcd51a52b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.body
+    - field.field.node.projects.field_client_
+    - field.field.node.projects.field_image_of_project
+    - field.field.node.projects.field_location
+    - field.field.node.projects.field_market
+    - field.field.node.projects.field_name_of_project
+    - field.field.node.projects.field_value_
+    - node.type.projects
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_client_:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_of_project:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_location:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_market:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_name_of_project:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_value_:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

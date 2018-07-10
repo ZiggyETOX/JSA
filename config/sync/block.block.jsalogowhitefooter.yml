@@ -1,0 +1,25 @@
+uuid: af5e7402-9d66-435f-9eb7-a3a24803ba11
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a00afc82-5e23-4ea6-b6b8-9fb3131b1c81'
+  module:
+    - block_content
+  theme:
+    - bootstrap_subtheme
+id: jsalogowhitefooter
+theme: bootstrap_subtheme
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:a00afc82-5e23-4ea6-b6b8-9fb3131b1c81'
+settings:
+  id: 'block_content:a00afc82-5e23-4ea6-b6b8-9fb3131b1c81'
+  label: 'JSA logo-white footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: d215cf07-73ba-409c-a0c4-9045a250e9ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Our Team'
+type: our_team
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

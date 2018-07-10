@@ -1,0 +1,24 @@
+uuid: 22505a01-0fce-42c9-9338-ff0d8ee7e742
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.multi-media-header
+  module:
+    - system
+  theme:
+    - bootstrap_subtheme
+id: multimediaheader
+theme: bootstrap_subtheme
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:multi-media-header'
+settings:
+  id: 'system_menu_block:multi-media-header'
+  label: Multi-media-header
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

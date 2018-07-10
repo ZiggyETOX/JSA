@@ -1,0 +1,52 @@
+uuid: 142f4963-f02c-43c4-95db-a58166f78ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_team.body
+    - field.field.node.our_team.field_name
+    - field.field.node.our_team.field_position_
+    - field.field.node.our_team.field_qualifications
+    - node.type.our_team
+  module:
+    - options
+    - text
+    - user
+id: node.our_team.default
+targetEntityType: node
+bundle: our_team
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position_:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_qualifications:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,36 @@
+uuid: f879f8fb-4211-4243-81b5-beaf521fcbf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_market
+field_name: field_market
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Retail Market'
+      label: 'Retail Market'
+    -
+      value: 'Commercial Market'
+      label: 'Commercial Market'
+    -
+      value: 'Leisure Market'
+      label: 'Leisure Market'
+    -
+      value: 'Industrial Market'
+      label: 'Industrial Market'
+    -
+      value: 'Motor Trade Market'
+      label: 'Motor Trade Market'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

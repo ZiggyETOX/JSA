@@ -1,0 +1,55 @@
+uuid: f0eb783f-a915-4e93-8dde-64973155e39d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_all_rights_reserved
+    - field.field.block_content.footer_all_rights_reserved.body
+    - field.field.block_content.footer_all_rights_reserved.field_facebook
+    - field.field.block_content.footer_all_rights_reserved.field_follow_u
+    - field.field.block_content.footer_all_rights_reserved.field_tumblr
+    - field.field.block_content.footer_all_rights_reserved.field_twitter
+  module:
+    - text
+id: block_content.footer_all_rights_reserved.default
+targetEntityType: block_content
+bundle: footer_all_rights_reserved
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_follow_u:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tumblr:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_twitter:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

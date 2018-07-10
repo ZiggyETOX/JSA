@@ -1,0 +1,22 @@
+uuid: c17d373c-5fd9-46da-bbb8-6003736e4327
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_all_rights_reserved
+    - field.storage.block_content.field_tumblr
+  module:
+    - text
+id: block_content.footer_all_rights_reserved.field_tumblr
+field_name: field_tumblr
+entity_type: block_content
+bundle: footer_all_rights_reserved
+label: Tumblr
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

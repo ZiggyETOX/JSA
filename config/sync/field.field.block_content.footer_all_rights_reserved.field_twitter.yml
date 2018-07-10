@@ -1,0 +1,22 @@
+uuid: ca09c142-8029-46e4-b1ed-e826d14048af
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_all_rights_reserved
+    - field.storage.block_content.field_twitter
+  module:
+    - text
+id: block_content.footer_all_rights_reserved.field_twitter
+field_name: field_twitter
+entity_type: block_content
+bundle: footer_all_rights_reserved
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

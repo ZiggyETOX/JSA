@@ -1,0 +1,34 @@
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://jsa.local/themes/custom/bootstrap_subtheme/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  bootstrap_subtheme: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/custom/bootstrap_subtheme/JSA-logo-blue.svg
+  url: ''
+  use_default: 1
+region_wells:
+  strip: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+cdn_jsdelivr_theme: simplex
+navbar_position: fixed-top
+fluid_container: 0
+table: ''

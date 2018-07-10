@@ -1,0 +1,22 @@
+uuid: 12bd57cb-b54c-42b0-afa3-a172e6663895
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_all_rights_reserved
+    - field.storage.block_content.field_facebook
+  module:
+    - text
+id: block_content.footer_all_rights_reserved.field_facebook
+field_name: field_facebook
+entity_type: block_content
+bundle: footer_all_rights_reserved
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

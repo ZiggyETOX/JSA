@@ -1,0 +1,25 @@
+uuid: 13a7efb2-e1ba-4ab8-abd6-c3c0c6270cd9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b93cef66-e999-472a-b80e-a386396e223e'
+  module:
+    - block_content
+  theme:
+    - bootstrap_subtheme
+id: socialmediamenu_2
+theme: bootstrap_subtheme
+region: navigation
+weight: 0
+provider: null
+plugin: 'block_content:b93cef66-e999-472a-b80e-a386396e223e'
+settings:
+  id: 'block_content:b93cef66-e999-472a-b80e-a386396e223e'
+  label: 'Social media menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

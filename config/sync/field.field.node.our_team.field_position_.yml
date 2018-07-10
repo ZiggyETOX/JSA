@@ -1,0 +1,21 @@
+uuid: 89862e6d-6aff-4917-93b9-046a9befccc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_
+    - node.type.our_team
+  module:
+    - options
+id: node.our_team.field_position_
+field_name: field_position_
+entity_type: node
+bundle: our_team
+label: 'Position:'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

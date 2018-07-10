@@ -1,0 +1,27 @@
+uuid: 5c1e837f-59f4-41a0-8c95-781a159c19bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_position_
+field_name: field_position_
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Managing Member'
+      label: 'Managing Member'
+    -
+      value: 'Senior Associate'
+      label: 'Senior Associate'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 8e3c7325-e7e1-4233-a229-2db49ae896a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_all_rights_reserved
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.footer_all_rights_reserved.body
+field_name: body
+entity_type: block_content
+bundle: footer_all_rights_reserved
+label: Instagram
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

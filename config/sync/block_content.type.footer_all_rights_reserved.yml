@@ -1,0 +1,8 @@
+uuid: a3e94107-b0f9-4192-8b05-781af16b72b7
+langcode: en
+status: true
+dependencies: {  }
+id: footer_all_rights_reserved
+label: 'footer all rights reserved'
+revision: 0
+description: ''
