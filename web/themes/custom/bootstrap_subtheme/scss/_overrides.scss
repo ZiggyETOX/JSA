@@ -26,6 +26,7 @@
   } // Page header.
   .page-header {
     margin-top: 0;
+
   } // Footer.
   .footer {
     //margin-top: 45px;
@@ -65,23 +66,15 @@
 
 
 
-
-  .sliderblock {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 105px;
-    max-height: 400px;
-    img {
-      max-height: 345px;
-      width: auto;
-    }
-  }
-
-
-
+.navbar-fixed-top{
+  margin-bottom:0px;
+}
 
   .region-navigation {
-    
+    a.logo.navbar-btn.pull-left{
+      width:14vh;
+    }
+
 
     .block-system-menu-blocksocial-menu {
       background: $brand-primary;
@@ -116,12 +109,13 @@
 
   .region-footer {
 
-
+ position: relative;
     section#block-footertextbelowlogo-2 {
       // p{
       font-size: 70%;
       margin-left: 50.5px;
       color: $brand-secondary; //}
+      width: 45%;
     }
 
 
@@ -130,15 +124,23 @@
       position: absolute;
       color: $brand-secondary;
       font-size: 70%;
-      right: 10px;
-      bottom: 0px
+      right: -6%;
+      bottom: 0%;
+      width:40%;
+      padding-right:4%
     }
 
 
     section#block-socialmediamenu {
       position: absolute;
-      right: 35px;
-      top: -80px;
+      
+      right: 5%;
+      top: -97%;
+      @media #{$mobile} {
+    top: -87%;
+    visibility: hidden;
+    right:25%;
+   }
       span {
         font-size: 120%;
         color: white;
@@ -149,8 +151,7 @@
     }
 
 
-
-    position: relative;
+   
     .JSA-social-logo-footer-fb {}
 
     .JSA-social-logo-footer-tblr {}
@@ -163,6 +164,7 @@
 
 
     .JSA-white-logo-footer {
+
       img {
         &:hover {
           opacity: 0.75;
@@ -176,6 +178,9 @@
       }
     }
   }
+
+
+
 
   .block-system-menu-blocksocial-menu {
 
@@ -217,9 +222,10 @@
   //#122941;//#777
   //#4675A3;//#333
   .main-container {
-    margin-top: 120px;
+    //margin-top: 90vh;
   } //Main navigation(main menu)
   .menu--main {
+
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 40px;
@@ -246,53 +252,104 @@
         display: none;
       }
     }
-  }
+  } //bootstrap/assets/stylesheets/bootstrap/_carousel.scss
+  //carousel-indicators overides
+  .carousel-indicators {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
 
-
-
-
-
-//carousel-indicators overides
-.carousel-indicators {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-
-  li {
-    display: inline-block;
-    width:  20px;
-    height: 20px;
-    margin: 4px;
-    text-indent: -999px;
-    border: 1px solid $carousel-indicator-border-color;
-    border-radius: 10px;
-    cursor: pointer;
-
-    // IE8-9 hack for event handling
-    //
-    // Internet Explorer 8-9 does not support clicks on elements without a set
-    // `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
-    // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
-    //
-    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
-    // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
-    background-color: rgba(0,0,0,0); // IE9
-    &:hover {
-      background-color: $brand-secondary;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 4px;
+      text-indent: -999px;
+      border: 1px solid $carousel-indicator-border-color;
+      border-radius: 10px;
+      cursor: pointer; // IE8-9 hack for event handling
+      //
+      // Internet Explorer 8-9 does not support clicks on elements without a set
+      // `background-color`. We cannot use `filter` since that's not viewed as a
+      // background color by the browser. Thus, a hack is needed.
+      // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
+      //
+      // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
+      // set alpha transparency for the best results possible.
+      background-color: #000 \9; // IE8
+      background-color: rgba(0, 0, 0, 0); // IE9
+      &:hover {
+        background-color: $brand-secondary;
+      }
+    }
+    .active {
+      margin: 4px;
+      width: 21px;
+      height: 21px;
+      background-color: $carousel-indicator-active-bg;
+    }
+  } // Optional captions
+  // -----------------------------
+  // Hidden by default for smaller viewports
+  .carousel-caption {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    width: 200px;
+    height: fit-content;
+    background-color: $brand-primary;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 25px;
+    text-align: -webkit-auto;
+    h3 {
+      margin-left: 10%;
+    } //right: 15%;
+    //bottom: 20px;
+    z-index: 10; //padding-top: 20px;
+    //padding-bottom: 20px;
+    color: $carousel-caption-color; //text-align: center;
+    text-shadow: $carousel-text-shadow;
+    & .btn {
+      text-shadow: none; // No shadow for button elements in carousel-caption
     }
   }
-  .active {
-    margin: 4px;
-    width:  21px;
-    height: 21px;
-    background-color: $carousel-indicator-active-bg;
+
+  .sliderblock {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 137px;    
+    //position: absolute;
+    //top:144px;
+    //padding-top:40px;
+    height:400px;
+   // padding-top
+   // margin-bottom: 20px; //max-height: 400px;
+   @media #{$tablet} {
+    margin-top: 77px;
+   }
+   @media #{$mobile} {
+    margin-top: 111px;
+   }
+
+    .item {
+      height:42vh;
+      min-height:400px;
+      max-height:400px;
+
+      img {
+        position: center;
+      height: 100%;
+      //size:cover;
+      
+      width: 100%;
+    }
+    }
+    
   }
-}

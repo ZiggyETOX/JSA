@@ -62,7 +62,15 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : 'container-fluid',
       ]
     %}
-    <div class="top-strip {{ container }}">{{ page.strip }}</div>
+    {#    Top strip    
+     {% if page.strip %}
+        {% block strip %}
+          <div class=" top-strip-media {{container-fluid}}">
+            {{ page.strip }}
+          </div>
+        {% endblock %}
+      {% endif %}#}
+      <div class="navheader">
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
@@ -90,6 +98,7 @@
         </div>
       {% endif %}
     </header>
+  </div>
     {#    slider    #}
       {% if page.slider %}
         {% block slider %}

@@ -6,3 +6,30 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+// function bootstrap_subtheme_preprocess_block(&$variables){
+// 	if($variables['configuration']['id'] == 'block_content:b93cef66-e999-472a-b80e-a386396e223e') {
+// 		// echo "<pre>";
+// 		// print_r(($variables['attributes']['class']));
+// 		// echo "</pre>";
+// 		// exit;
+// 		$variables['attributes']['class'][] = 'container-fluid';
+// 	}
+	
+	
+	
+// 	// $block_id = $variables['elements']['#id'];
+
+
+// 	// switch ($block_id) {
+// 	// 	case 'block-socialmediamenu-2':
+// 	// 		# code...
+// 	// 		break;
+		
+// 	// 	default:
+// 	// 		# code...
+// 	// 		break;
+// 	// }
+
+// }
