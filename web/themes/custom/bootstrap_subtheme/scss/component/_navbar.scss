@@ -6,6 +6,7 @@ $tablet:          "screen and (min-width: #{$screen-sm-min})";
 $normal:          "screen and (min-width: #{$screen-md-min})";
 $wide:            "screen and (min-width: #{$screen-lg-min})";
 $grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+$team-view-breakpoint: "screen and (max-width: 991px)";
 
 body {
   // Fix horizontal scrolling on iOS devices.
