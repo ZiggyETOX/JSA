@@ -1,0 +1,17 @@
+uuid: 643a20e6-d655-460e-808e-29c51d66912a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'How we started'
+type: how_we_started
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

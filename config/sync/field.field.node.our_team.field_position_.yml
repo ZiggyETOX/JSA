@@ -11,7 +11,7 @@ id: node.our_team.field_position_
 field_name: field_position_
 entity_type: node
 bundle: our_team
-label: 'Position:'
+label: Position
 description: ''
 required: true
 translatable: false

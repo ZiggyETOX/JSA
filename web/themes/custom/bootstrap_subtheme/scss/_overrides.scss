@@ -109,7 +109,7 @@
     article.how-we-started.full.clearfix {
 
       .how-we-started {
-        display:flex;
+        display: flex;
         div {
           width: 50%;
           height: auto;
@@ -118,15 +118,12 @@
           text-align: justify;
         }
         @media #{$mobile} {
-          display:block;
+          display: block;
           div {
-            padding-right:7px;
-            width:100%;
-            //min-width:280px;
-            height:auto;
-           // display:none;
+            padding-right: 7px;
+            width: 100%; //min-width:280px;
+            height: auto; // display:none;
           }
-          
         }
       }
 
@@ -134,10 +131,8 @@
       .field.field--name-field-photo.field--type-image.field--label-hidden.field--item {
         display: block;
         position: relative;
-        margin:2%;
-        margin-top: 50px;
-
-       // margin-left: -82px;
+        margin: 2%;
+        margin-top: 50px; // margin-left: -82px;
         //margin-right: -81px;
         margin-bottom: -46px;
       }
@@ -151,6 +146,26 @@
 
     section#block-views-block-team-view-block-1 {
 
+      h2.block-title {
+        text-transform: uppercase;
+        color: $brand-primary;
+        border: 2px solid $brand-secondary;
+        border-radius: 5px;
+        background-color: white;
+        display: inline-flex;
+        padding: 14px;
+        width: 30%;
+        min-width: 230px; //margin-right: 2px;
+        margin-top: 5%;
+        //margin-left: 2px;
+        //margin-bottom: 40px;
+        //margin-top: 100px;
+        @media #{$team-view-breakpoint} {
+            width:100%;
+            text-align: center;
+            display: block;
+          }
+      }
 
       div#views-bootstrap-team-view-block-1 {
         width: 100%;
@@ -162,7 +177,7 @@
           margin-left: 0px;
           border-bottom: 2px solid $brand-primary;
           border-left: 2px solid $brand-primary;
-          margin-top: 12%;
+          margin-top: 5%;
           @media #{$team-view-breakpoint} {
             border-right: 2px solid $brand-primary;
           }
@@ -257,6 +272,11 @@
         margin-left: 2px;
         margin-bottom: 40px;
         margin-top: 100px;
+        @media #{$mobile} {
+          width: calc(100% - 4px);
+          text-align: center;
+          display: block;
+        }
       }
 
       .views-col {
@@ -267,6 +287,16 @@
         height: 324px;
         color: white;
         margin-bottom: 4px;
+        @media #{$mobile} {
+          max-width:50%;
+          width: calc(50% - 4px) !important;
+          
+
+        }
+        @media #{$projects-displaybreak} {
+          max-width: 100%;
+          width: calc(100% - 4px) !important;
+        }
 
         div {
           padding-left: 5%;
@@ -497,6 +527,9 @@
       &:hover {
         background-color: $brand-secondary;
       }
+      &:first-child {
+        {{glyphicon glyphicon-shopping-cart}}
+      }
     }
     .active {
       margin: 4px;
@@ -542,7 +575,7 @@
     height: auto; // padding-top
     margin-bottom: 40px; //max-height: 400px;
     @media #{$tablet} {
-      margin-top: 77px;
+      margin-top: 65px;
     }
     @media #{$mobile} {
       margin-top: 111px;

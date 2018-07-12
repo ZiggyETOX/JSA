@@ -13,7 +13,6 @@ dependencies:
     - node.type.projects
   module:
     - image
-    - options
     - text
     - user
 id: node.projects.default
@@ -24,12 +23,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content
   field_client_:
-    weight: 105
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -37,8 +36,8 @@ content:
     type: string
     region: content
   field_image_of_project:
-    weight: 106
-    label: above
+    weight: 5
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -46,30 +45,15 @@ content:
     type: image
     region: content
   field_location:
-    weight: 103
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_market:
-    weight: 107
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_name_of_project:
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_value_:
-    weight: 104
+    weight: 2
     label: above
     settings:
       link_to_entity: false
@@ -77,6 +61,10 @@ content:
     type: string
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_market: true
+  field_name_of_project: true

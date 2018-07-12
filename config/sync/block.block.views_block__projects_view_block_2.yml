@@ -1,0 +1,30 @@
+uuid: 10b01d5d-44f0-4e55-813a-3e05c5ce1864
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects_view
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_subtheme
+id: views_block__projects_view_block_2
+theme: bootstrap_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:projects_view-block_2'
+settings:
+  id: 'views_block:projects_view-block_2'
+  label: 'Retail Market'
+  provider: views
+  label_display: visible
+  views_label: 'Retail Market'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-projects
+    negate: false
+    context_mapping: {  }

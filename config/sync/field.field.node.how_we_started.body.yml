@@ -1,0 +1,22 @@
+uuid: bd9637bd-597f-47a6-9246-526dc2f26eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.how_we_started
+  module:
+    - text
+id: node.how_we_started.body
+field_name: body
+entity_type: node
+bundle: how_we_started
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

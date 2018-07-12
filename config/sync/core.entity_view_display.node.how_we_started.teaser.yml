@@ -1,0 +1,28 @@
+uuid: ffd406b4-a338-4bd9-a399-52069329fcdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.how_we_started.body
+    - node.type.how_we_started
+  module:
+    - text
+    - user
+id: node.how_we_started.teaser
+targetEntityType: node
+bundle: how_we_started
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
