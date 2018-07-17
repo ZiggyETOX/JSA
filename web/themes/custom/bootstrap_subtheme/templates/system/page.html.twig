@@ -177,6 +177,15 @@
   </div>
 {% endblock %}
 
+      {#    Map    #}
+      {% if page.map %}
+        {% block map %}
+          <div class="container-fluid map">
+            {{ page.map }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
 {% if page.footer %}
   {% block footer %}
     <footer class="footer container-fluid" role="contentinfo">

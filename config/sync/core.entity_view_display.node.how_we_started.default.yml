@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.how_we_started.field_title
     - node.type.how_we_started
   module:
-    - image
     - text
     - user
 id: node.how_we_started.default
@@ -23,15 +22,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_photo:
-    weight: 1
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
 hidden:
+  field_photo: true
   field_title: true
   links: true

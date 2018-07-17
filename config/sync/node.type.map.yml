@@ -1,0 +1,17 @@
+uuid: 0f0c39e8-7498-4f3a-a4f2-d6dd5c41ce35
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Map
+type: map
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

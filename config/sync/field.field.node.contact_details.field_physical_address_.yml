@@ -1,0 +1,22 @@
+uuid: c84666d1-04bb-48a1-a013-a1b33dc7046e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_address_
+    - node.type.contact_details
+  module:
+    - text
+id: node.contact_details.field_physical_address_
+field_name: field_physical_address_
+entity_type: node
+bundle: contact_details
+label: 'Physical Address:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

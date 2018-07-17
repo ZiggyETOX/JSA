@@ -1,0 +1,19 @@
+uuid: 508eea0e-ff45-4a7b-b801-f3240495c687
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facsimile_
+    - node.type.contact_details
+id: node.contact_details.field_facsimile_
+field_name: field_facsimile_
+entity_type: node
+bundle: contact_details
+label: 'Facsimile:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

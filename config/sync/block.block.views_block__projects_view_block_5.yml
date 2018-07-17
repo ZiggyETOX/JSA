@@ -1,6 +1,6 @@
-uuid: 636915ab-06a5-47dc-8061-c5f5041d573d
+uuid: 0e597e95-5033-4184-904e-86b607c53de1
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.projects_view
@@ -9,17 +9,17 @@ dependencies:
     - views
   theme:
     - bootstrap_subtheme
-id: views_block__projects_view_block_1
+id: views_block__projects_view_block_5
 theme: bootstrap_subtheme
 region: content
-weight: 0
+weight: -9
 provider: null
-plugin: 'views_block:projects_view-block_1'
+plugin: 'views_block:projects_view-block_5'
 settings:
-  id: 'views_block:projects_view-block_1'
+  id: 'views_block:projects_view-block_5'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

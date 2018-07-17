@@ -11,7 +11,7 @@ dependencies:
 id: jsalogowhitefooter
 theme: bootstrap_subtheme
 region: footer
-weight: -9
+weight: -12
 provider: null
 plugin: 'block_content:a00afc82-5e23-4ea6-b6b8-9fb3131b1c81'
 settings:

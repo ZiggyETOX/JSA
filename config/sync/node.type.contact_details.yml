@@ -1,0 +1,17 @@
+uuid: fc0e8467-af14-4958-bfd0-2e6a1cb5f2db
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Contact Details'
+type: contact_details
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,30 @@
+uuid: 3b749892-4f97-4a18-8413-6ec2251480f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.how_we_started_about_page_
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_subtheme
+id: views_block__how_we_started_about_page__block_1
+theme: bootstrap_subtheme
+region: map
+weight: 0
+provider: null
+plugin: 'views_block:how_we_started_about_page_-block_1'
+settings:
+  id: 'views_block:how_we_started_about_page_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

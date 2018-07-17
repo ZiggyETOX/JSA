@@ -11,7 +11,7 @@ dependencies:
 id: socialmediamenu
 theme: bootstrap_subtheme
 region: footer
-weight: -8
+weight: -11
 provider: null
 plugin: 'block_content:b93cef66-e999-472a-b80e-a386396e223e'
 settings:

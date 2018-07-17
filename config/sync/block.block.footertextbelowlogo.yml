@@ -11,7 +11,7 @@ dependencies:
 id: footertextbelowlogo
 theme: bootstrap_subtheme
 region: footer
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:a6b406e1-ca90-4356-abfc-10e5204157b3'
 settings:

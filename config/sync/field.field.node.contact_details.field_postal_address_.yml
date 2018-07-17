@@ -1,0 +1,22 @@
+uuid: 3868ac04-ed12-4907-8b58-26154c0b8856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_postal_address_
+    - node.type.contact_details
+  module:
+    - text
+id: node.contact_details.field_postal_address_
+field_name: field_postal_address_
+entity_type: node
+bundle: contact_details
+label: 'Postal Address:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

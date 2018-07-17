@@ -1,0 +1,22 @@
+uuid: f0859fbb-8ae6-4b71-a683-f5d1389e4703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_details
+    - node.type.contact_details
+  module:
+    - text
+id: node.contact_details.field_contact_details
+field_name: field_contact_details
+entity_type: node
+bundle: contact_details
+label: 'Contact Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
